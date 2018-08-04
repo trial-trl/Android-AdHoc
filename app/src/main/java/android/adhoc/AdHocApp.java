@@ -72,7 +72,7 @@ public class AdHocApp extends android.app.Application {
         String notify_error = getString(R.string.notify_error);
         PendingIntent pi = PendingIntent.getActivity(this, 0, new Intent(this, AdHocActivity.class), 0);
         this.notificationError = new Notification(R.drawable.barnacle_error, notify_error, 0);
-        this.notificationError.setLatestEventInfo(this, app_name, notify_error, pi);
+        //this.notificationError.setLatestEventInfo(this, app_name, notify_error, pi);
         this.notificationError.flags = Notification.FLAG_AUTO_CANCEL;
 
         this.wifiManager = (WifiManager) this.getSystemService(Context.WIFI_SERVICE);
@@ -168,7 +168,7 @@ public class AdHocApp extends android.app.Application {
         this.notification.tickerText = runningMessage; 
         Intent ni = new Intent(this, AdHocActivity.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, ni, 0);
-        this.notification.setLatestEventInfo(this, app_name, runningMessage, pi);
+        //this.notification.setLatestEventInfo(this, app_name, runningMessage, pi);
         this.notificationManager.notify(NOTIFY_RUNNING, notification);
         this.adHocService.startForegroundCompat(NOTIFY_RUNNING, notification);
         

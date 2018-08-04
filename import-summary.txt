@@ -1,0 +1,61 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .idea\
+* .idea\compiler.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* Android-AdHoc.iml
+* LICENSE
+* README
+* jni\
+* jni\Application.mk
+* native\
+* native\Android.mk
+* native\include\
+* native\include\config.hh
+* native\include\ifctl.hh
+* native\include\log.hh
+* native\include\properties.hh
+* native\wifi\
+* native\wifi\Android.mk
+* native\wifi\hardware_legacy_stub.c
+* native\wifi\hardware_legacy_stub.h
+* native\wifi\init.hh
+* native\wifi\iwctl.hh
+* native\wifi\main.cc
+* native\wifi\wifi.hh
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -388,7 +388,7 @@ public class AdHocService extends android.app.Service {
             return;
         }
         // Fall back on the old API.
-        setForeground(true);
+        //setForeground(true);
     }
 }
 
